@@ -17,6 +17,11 @@ app.get("/", function(req, res) {
 });
 
 
-app.listen(4000, function() {
-  console.log("Server stated on port 4000");
+let port = process.env.PORT;
+if  (port == null || port == "") {
+    port = 1000;
+}
+
+app.listen(port, function() {
+  console.log("Server stated succesfully");
 });
