@@ -12,11 +12,14 @@
   },
   "author": "Abenezer Monjor",
   "license": "ISC",
-  "engines" :{
+  "engines": {
     "node": "13.5.0"
   },
   "bugs": {
     "url": "https://github.com/monjo003/portfolio/issues"
   },
-  "homepage": "https://github.com/monjo003/portfolio#readme"
+  "homepage": "https://github.com/monjo003/portfolio#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
