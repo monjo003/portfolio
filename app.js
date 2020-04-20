@@ -4,7 +4,7 @@ const nodemailer = require("nodemailer");
 const path = require("path");
 const smtpTransport = require('nodemailer-smtp-transport');
 
-var config = require('./config'); //[env]
+//var config = require('./config'); //[env]
 
 
 const app = express();
