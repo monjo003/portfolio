@@ -4,6 +4,7 @@ const nodemailer = require("nodemailer");
 const path = require("path");
 const smtpTransport = require('nodemailer-smtp-transport');
 
+var config = require('./config'); //[env]
 
 
 const app = express();
@@ -42,7 +43,7 @@ app.post("/send", function(req, res){
       secure: false, // true for 465, false for other ports
       auth: {
         user: 'nodemailabenezer@gmail.com', // generated ethereal user  --- abe@email.com
-        pass: 'TemertStuff1!' // generated ethereal password -- password
+        pass: config.credentials.password // generated ethereal password -- password
       },
       tls:{
         rejectUnauthorized:false
