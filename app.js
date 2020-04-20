@@ -43,7 +43,7 @@ app.post("/send", function(req, res){
       secure: false, // true for 465, false for other ports
       auth: {
         user: 'nodemailabenezer@gmail.com', // generated ethereal user  --- abe@email.com
-        pass: config.credentials.password // generated ethereal password -- password
+        pass: 'TemertStuff1!' // generated ethereal password -- password
       },
       tls:{
         rejectUnauthorized:false
